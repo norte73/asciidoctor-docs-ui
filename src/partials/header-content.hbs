@@ -11,7 +11,9 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
+{{!--
         {{#if env.ALGOLIA_API_KEY}}
+--}}
         <div class="navbar-item search hide-for-print">
           {{#if (and page.component (ne page.component.name 'home') (ne page.component.name 'ROOT'))}}
           <div id="search" class="field has-filter">
@@ -26,7 +28,9 @@
           </div>
           {{/if}}
         </div>
+{{!--
         {{/if}}
+--}}
         <div class="navbar-item has-dropdown is-hoverable">
           <div class="navbar-link">AsciiDoc</div>
           <div class="navbar-dropdown">
